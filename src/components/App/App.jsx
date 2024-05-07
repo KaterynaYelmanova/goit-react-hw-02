@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Description from "../Description/Description";
 import Feedback from "../Feedback/Feedback";
 import Options from "../Options/Options";
+import Notification from "../Notification/Notification";
 import resp from "../../resp.json";
 import css from "./App.module.css";
 
@@ -45,7 +46,7 @@ export default function App() {
                     feedback={feedback}
                 />
             ) : (
-                    <p>No feedback yet</p>
+                    <Notification/>
             )}
         </div>
     )
